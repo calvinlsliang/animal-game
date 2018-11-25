@@ -31,6 +31,7 @@ class AnimalsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         Picasso.get()
                 .load(animal)
                 .error(R.mipmap.ic_launcher)
+                .centerCrop()
                 .fit()
                 .into(itemView.animal_image)
     }
