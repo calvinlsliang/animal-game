@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.animal_cell.view.*
 class AnimalsAdapter : RecyclerView.Adapter<AnimalsViewHolder>() {
 
     var animals = listOf<String>()
+        set(value) { field = value.chunked(4).get(0) }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalsViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.animal_cell, parent, false)
@@ -35,5 +36,4 @@ class AnimalsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                 .fit()
                 .into(itemView.animal_image)
     }
-
 }

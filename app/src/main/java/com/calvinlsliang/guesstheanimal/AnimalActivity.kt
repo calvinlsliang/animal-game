@@ -15,7 +15,6 @@ class AnimalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_animal)
 
         setupAdapter()
-
     }
 
     private fun setupAdapter() {
@@ -28,6 +27,5 @@ class AnimalActivity : AppCompatActivity() {
                 "https://i.imgur.com/xGKcKPX.jpg")
         animals_recycler_view.adapter = adapter
         animals_recycler_view.layoutManager = AnimalsLayoutManager(this, 2)
-
     }
 }
