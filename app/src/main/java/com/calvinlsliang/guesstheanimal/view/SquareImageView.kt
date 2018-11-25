@@ -12,4 +12,6 @@ class SquareImageView(context: Context?, attrs: AttributeSet?) : ImageView(conte
 
         setMeasuredDimension(measuredWidth, measuredWidth)
     }
+
+
 }
